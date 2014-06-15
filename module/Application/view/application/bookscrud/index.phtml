@@ -1,0 +1,42 @@
+<div>
+    <div>
+        <div>
+            <div>
+                <h3>Books</h3>
+            </div>
+            <div>
+                <a href="<?php echo $this->url('bookscrud', array('action' => 'add')); ?>">Add Book</a>
+
+                <?php if (isset($books)) : ?>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Title</th>
+                                <th>Author</th>
+                                <th>Publisher</th>
+                                <th>ISBN</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <?php foreach ($books as $book): ?>
+                            <tbody>
+                                <tr>
+                                    <td><?php echo $book->getId(); ?></td>
+                                    <td><?php echo $book->getTitle(); ?></td>
+                                    <td><?php echo $book->getAuthor(); ?></td>
+                                    <td><?php echo $book->getPublisher(); ?></td>
+                                    <td><?php echo $book->getIsbn(); ?></td>
+                                    <td>
+                                        <a href="<?php echo $this->url('bookscrud', array('action' => 'edit', 'id' => $book->getId())); ?>">Edit</a> |
+                                        <a href="<?php echo $this->url('bookscrud', array('action' => 'delete', 'id' => $book->getId())); ?>">Delete</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        <?php endforeach; ?>
+                    </table>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+</div>

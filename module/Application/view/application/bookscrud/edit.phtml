@@ -1,0 +1,12 @@
+<?php
+$title = 'Edit Book';
+$this->headTitle($title);
+?>
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+<form method="post">
+    title: <input type="text" name="title" value="<?php echo $book->getTitle(); ?>"><br>
+    author: <input type="text" name="author" value="<?php echo $book->getAuthor(); ?>"><br>
+    publisher: <input type="text" name="publisher" value="<?php echo $book->getPublisher(); ?>"><br>
+    ibsn: <input type="text" name="isbn" value="<?php echo $book->getIsbn(); ?>"><br>
+    <input type="submit" value="Submit">
+</form>

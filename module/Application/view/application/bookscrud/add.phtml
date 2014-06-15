@@ -1,0 +1,12 @@
+<?php
+$title = 'Add new Book';
+$this->headTitle($title);
+?>
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+<form method="post">
+    title: <input type="text" name="title"><br>
+    author: <input type="text" name="author"><br>
+    publisher: <input type="text" name="publisher"><br>
+    ibsn: <input type="text" name="isbn"><br>
+    <input type="submit" value="Submit">
+</form>
