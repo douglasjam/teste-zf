@@ -1,9 +1,7 @@
 teste-zf
 ========
 
-webservice rest simples com zf2 e doctrine2
-
-exemplo de utilização do zend framework 2 com doctrine
+exemplo de utilização do zend framework 2 com doctrine na criação de um serviço de restful
 
 criação de um crud simples para inserção, edição e delete de livros
 
