@@ -23,6 +23,10 @@ retornar os dados esperados:
 
 Para acesso ao crud deve-se ir para a home / ou acessar a url /bookscrud
 
+* O banco utilizado está conteudo no arquivo <a href="teste-zf.sql">teste-zf.sql</a>
+
+Screenshots
+
 <img src="screenshot/teste-zf1.jpg" />
 <img src="screenshot/teste-zf2.jpg" />
 <img src="screenshot/teste-zf3.jpg" />
